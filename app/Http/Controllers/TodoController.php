@@ -53,6 +53,6 @@ class TodoController extends Controller
 
         Todo::destroy([$id]);
 
-        return response()->json(['data' => 'Successfully deleted']);
+        return response()->json($todo);
     }
 }
